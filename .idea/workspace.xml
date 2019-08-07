@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bd94b59-1ab1-4758-ba5e-1a9efa4ef5f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.java" afterDir="false" />
+    <list default="true" id="8bd94b59-1ab1-4758-ba5e-1a9efa4ef5f5" name="Default Changelist" comment="增加一个scala语言方面的distributed cache分布式缓存">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,9 +20,9 @@
     <session id="1059640483">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="7" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
@@ -27,20 +30,22 @@
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="8107" />
-          <entry key="scala" value="9252" />
+          <entry key="scala" value="9639" />
+          <entry key="txt" value="52" />
           <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="8110" />
-          <entry key="Scala" value="9252" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Scala" value="9639" />
           <entry key="XML" value="20" />
         </counts>
       </usages-collector>
@@ -48,7 +53,7 @@
         <counts>
           <entry key="class" value="8" />
           <entry key="java" value="76" />
-          <entry key="scala" value="80" />
+          <entry key="scala" value="81" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
@@ -56,7 +61,7 @@
         <counts>
           <entry key="CLASS" value="8" />
           <entry key="JAVA" value="76" />
-          <entry key="Scala" value="80" />
+          <entry key="Scala" value="81" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -66,26 +71,7 @@
     <favorites_list name="FlinkTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1375">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/customSource/aa.java" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/sql/sql_test.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/customSource/MysqlSource/demo1.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/customSource/MysqlSource/JdbcReader.java" />
@@ -151,8 +136,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoCounterJava.java" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/batch/BatchDemoCounterScala.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala.scala" />
       </list>
     </option>
   </component>
@@ -189,10 +175,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="82" />
-    <option name="y" value="138" />
-    <option name="width" value="1326" />
-    <option name="height" value="788" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -295,7 +281,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="FlatMapOperator&#9;PSI&#9;JAVA://org.apache.flink.api.java.operators.FlatMapOperator&#10;RedisSink&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/org/apache/flink/streaming/connectors/redis/RedisSink.class&#10;SplitStream&#9;PSI&#9;JAVA://org.apache.flink.streaming.api.datastream.SplitStream&#10;SingleOutputStreamOperator&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.class&#10;socketTextStream&#9;PSI&#9;JAVA://org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction&#10;FlatMapFunction&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/functions/FlatMapFunction.java&#10;WikipediaEditEvent&#9;PSI&#9;JAVA://org.apache.flink.streaming.connectors.wikiedits.WikipediaEditEvent&#10;flatMap&#9;PSI&#9;JAVA://org.apache.flink.api.common.functions.FlatMapFunction&#10;flatmap&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565075482262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565146523543" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4276316" />
@@ -325,20 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BatchDemoDisCacheJava">
-    <configuration name="BatchDemoBroadcastJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.batch.batchApi.BatchDemoBroadcastJava" />
-      <module name="FlinkTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.haoxin.bigdata.batch.batchApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.BatchDemoDisCacheScala">
     <configuration name="BatchDemoBroadcastScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.flink.batch.BatchDemoBroadcastScala" />
       <module name="FlinkTest" />
@@ -391,6 +364,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BatchDemoDisCacheScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.flink.batch.BatchDemoDisCacheScala" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.haoxin.bigdata.flink.batch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sql_join_test2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.flink.sql.sql_join_test2" />
       <module name="FlinkTest" />
@@ -406,19 +392,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.sql_join_test2" />
-      <item itemvalue="Application.BatchDemoBroadcastJava" />
       <item itemvalue="Application.BatchDemoBroadcastScala" />
       <item itemvalue="Application.BatchDemoCounterJava" />
       <item itemvalue="Application.BatchDemoCounterScala" />
       <item itemvalue="Application.BatchDemoDisCacheJava" />
+      <item itemvalue="Application.BatchDemoDisCacheScala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BatchDemoDisCacheScala" />
         <item itemvalue="Application.BatchDemoDisCacheJava" />
         <item itemvalue="Application.BatchDemoCounterScala" />
         <item itemvalue="Application.BatchDemoCounterJava" />
         <item itemvalue="Application.BatchDemoBroadcastScala" />
-        <item itemvalue="Application.BatchDemoBroadcastJava" />
       </list>
     </recent_temporary>
   </component>
@@ -433,6 +419,14 @@
       <option name="presentableId" value="Default" />
       <updated>1561536355191</updated>
     </task>
+    <task id="LOCAL-00001" summary="增加一个testBatch">
+      <created>1565075612558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565075612558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -456,7 +450,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5016077" side_tool="true" weight="0.34039333" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4324759" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7073955" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7069243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5209003" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,7 +459,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329582" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.329582" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.25723472" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3784219" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.04614221" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,51 +469,20 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.5665658" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.45310137" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5016077" side_tool="true" weight="0.34039333" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4324759" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.67202574" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5209003" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329582" />
-      <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.329582" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329582" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.25723472" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.04614221" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.5665658" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加一个testBatch" />
+    <MESSAGE value="增加一个scala语言方面的distributed cache分布式缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加一个scala语言方面的distributed cache分布式缓存" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/customSource/MysqlSource/demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/customSource/MysqlSource/JdbcReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -818,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-781">
           <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding>
-            <element signature="e#1949#1966#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,17 +819,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="700">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="743">
+          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

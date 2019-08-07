@@ -1,7 +1,6 @@
 package org.haoxin.bigdata.batch.batchApi;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.DataSource;
