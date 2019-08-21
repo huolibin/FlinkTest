@@ -3,13 +3,306 @@
   <component name="ChangeListManager">
     <list default="true" id="8bd94b59-1ab1-4758-ba5e-1a9efa4ef5f5" name="Default Changelist" comment="增加 checkpoint demo">
       <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarkScala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedata2Scala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedataScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSinkScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSourceScala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/SocketWindowWordCountJavaCheckPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/window/SocketWindowWordCountJavaCheckPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/stream_join.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/BatchWordCountJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/BatchWordCountJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoBroadcastJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoBroadcastJava$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoBroadcastJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoCounterJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoCounterJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoCrossJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDisCacheJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDistinctJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoDistinctJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoFirstNJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoHashRangePartitionJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoHashRangePartitionJava$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoHashRangePartitionJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoJoinJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoJoinJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoMapPartitionJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoMapPartitionJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoOutJoinJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoOutJoinJava$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoOutJoinJava$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoOutJoinJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoTestJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/batch/batchApi/BatchDemoUnionJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$7$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anon$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoBroadcastScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoCorssScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoCorssScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoCounterScala$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoCounterScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoCounterScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDisCacheScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDistinctScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDistinctScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoDistinctScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoFirstNScala$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoFirstNScala$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoFirstNScala$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoFirstNScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoFirstNScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$6$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$6$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoHashRangePartitionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$6$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$6$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoJoinScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$10$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$10$$anonfun$createSerializer$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$6$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$6$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$7$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$7$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$8$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$8$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$9$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$9$$anonfun$createSerializer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anon$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoOuterJoinScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$3$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$3$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$4$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$4$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchDemoUnionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchMapPartitionScala$$anonfun$main$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchMapPartitionScala$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchMapPartitionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchMapPartitionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/batch/BatchWordCountScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/kafka/FlinkFromkafakScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/kafka/FlinkFromkafakScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/Person1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/Person1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/PlayData$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/PlayData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/QueryResult$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/QueryResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/ResultData$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/ResultData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/TextData4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$6$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$6$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$6$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$6$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_join_test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$3$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$3$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$4$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$4$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$3$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$3$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$4$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$4$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/sql/sql_top_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/InnerJoinFunction$$anonfun$coGroup$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/InnerJoinFunction$$anonfun$coGroup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/InnerJoinFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/LeftJoinFunction$$anonfun$coGroup$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/LeftJoinFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/RightJoinFunction$$anonfun$coGroup$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/RightJoinFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$WordWithCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala$WordWithCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/SocketWindowWordCountScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StockSnapshot$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StockSnapshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StockTransaction$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StockTransaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StreamFromCollect$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StreamFromCollect$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/StreamFromCollect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/MyPartitionerScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/MyNoParallelSourceScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/MyParallelSourceScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/MyRichParallelSourceScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo1$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo3$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/customSource/demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala$MyRedisMapperScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/sink/DataToRediScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$4$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$4$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$5$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$5$$anonfun$createSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$6$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$6$$anonfun$createSerializer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/streaming/stream_join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/HashCode$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/HashCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/flink/udf/sql_udf_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/sql/Sql_test_java$WC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/sql/Sql_test_java.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customPartition/DemoMyParition$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customPartition/DemoMyParition$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customPartition/DemoMyParition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customPartition/MyPartition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Broad_Source_demo1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Broad_Source_demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MyCustomSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MyParallelSourceFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MyRichParallelSourceFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MysqlSource/JdbcReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MysqlSource/JdbcWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/MysqlSource/demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/customSource/Source_demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_connect$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_connect$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_connect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_split$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_split.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_union$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/operator/demo_union.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/sink/DataToRedis$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/sink/DataToRedis$MyRedisMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/streaming/sink/DataToRedis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfHashCodeJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfHashCodeJava$WordOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfHashCodeJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfWc$StringToSite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfWc$WC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/udf/UdfWc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/haoxin/bigdata/utils/config/ConfigKeys.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,51 +316,55 @@
     <session id="1059640483">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="7" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11134" />
-          <entry key="scala" value="10750" />
-          <entry key="txt" value="133" />
+          <entry key="java" value="11149" />
+          <entry key="properties" value="15" />
+          <entry key="scala" value="11181" />
+          <entry key="txt" value="155" />
           <entry key="xml" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11139" />
-          <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Scala" value="10750" />
+          <entry key="JAVA" value="11154" />
+          <entry key="PLAIN_TEXT" value="155" />
+          <entry key="Properties" value="15" />
+          <entry key="Scala" value="11181" />
           <entry key="XML" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="9" />
-          <entry key="java" value="105" />
+          <entry key="class" value="11" />
+          <entry key="java" value="109" />
           <entry key="md" value="1" />
-          <entry key="scala" value="85" />
+          <entry key="properties" value="2" />
+          <entry key="scala" value="88" />
           <entry key="xml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="105" />
+          <entry key="CLASS" value="11" />
+          <entry key="JAVA" value="109" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scala" value="85" />
+          <entry key="Properties" value="2" />
+          <entry key="Scala" value="88" />
           <entry key="XML" value="16" />
         </counts>
       </usages-collector>
@@ -77,26 +374,7 @@
     <favorites_list name="FlinkTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedataScala.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedata2Scala.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,9 +391,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customSource/MyRichParallelSourceScala.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customSource/demo1.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customSource/demo2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customSource/demo3.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customPatition/MyPartitionerScala.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/customPatition/demoMypartitionScala.scala" />
@@ -157,13 +432,16 @@
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/window/SocketDemoWindowWatermarkJava.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/window/SocketDemoWindowWatermarksideOutLateDataJava.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/window/SocketDemoWindowWatermarksideOutLateData2Java.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSink.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSink2.java" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarkScala.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedataScala.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedata2Scala.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSourceScala.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSinkScala.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSink.java" />
       </list>
     </option>
   </component>
@@ -184,6 +462,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="FlinkTest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="FlinkTest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -194,7 +477,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="165" />
+    <option name="x" value="625" />
+    <option name="y" value="6" />
     <option name="width" value="1257" />
     <option name="height" value="687" />
   </component>
@@ -204,7 +488,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -229,6 +512,40 @@
               <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,6 +555,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
@@ -256,40 +582,37 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="flink" type="462c0819:PsiDirectoryNode" />
               <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="window" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="process&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-runtime_2.11/1.7.2/flink-runtime_2.11-1.7.2.jar!/org/apache/flink/runtime/process&#10;reduce&#9;null&#9;null&#10;timewin&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/windowing/windows/TimeWindow.class&#10;timewindow&#9;PSI&#9;JAVA://org.apache.flink.streaming.api.windowing.windows.TimeWindow&#10;FlatMapOperator&#9;PSI&#9;JAVA://org.apache.flink.api.java.operators.FlatMapOperator&#10;RedisSink&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/org/apache/flink/streaming/connectors/redis/RedisSink.class&#10;SplitStream&#9;PSI&#9;JAVA://org.apache.flink.streaming.api.datastream.SplitStream&#10;SingleOutputStreamOperator&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.class&#10;socketTextStream&#9;PSI&#9;JAVA://org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction&#10;FlatMapFunction&#9;FILE&#9;jar://C:/Users/acer/.m2/repository/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/functions/FlatMapFunction.java&#10;WikipediaEditEvent&#9;PSI&#9;JAVA://org.apache.flink.streaming.connectors.wikiedits.WikipediaEditEvent&#10;flatMap&#9;PSI&#9;JAVA://org.apache.flink.api.common.functions.FlatMapFunction&#10;flatmap&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565920797484" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566368455524" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4276316" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\intellj_space\FlinkTest\src\main\resources" />
-      <recent name="E:\intellj_space\FlinkTest\src\main\java\org\haoxin\bigdata\streaming" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\intellj_space\FlinkTest\src\main\scala\org\haoxin\bigdata\flink\sql" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.haoxin.bigdata.flink.streaming.kafka" />
       <recent name="org.haoxin.bigdata.flink.streaming.window" />
       <recent name="org.haoxin.bigdata.streaming.kafka" />
       <recent name="org.haoxin.bigdata.streaming.window" />
       <recent name="org.haoxin.bigdata.batch.batchApi" />
-      <recent name="org.haoxin.bigdata.flink.batch" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\intellj_space\FlinkTest\src\main\scala\org\haoxin\bigdata\flink\sql" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\intellj_space\FlinkTest\src\main\resources" />
+      <recent name="E:\intellj_space\FlinkTest\src\main\java\org\haoxin\bigdata\streaming" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,20 +627,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StreamingWindowWatermarklatedataScala">
-    <configuration name="SocketDemoWindowWatermarksideOutLateData2Java" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.streaming.window.SocketDemoWindowWatermarksideOutLateData2Java" />
-      <module name="FlinkTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.haoxin.bigdata.streaming.window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StreamingKafkaSource">
     <configuration name="StreamingKafkaSink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.streaming.kafka.StreamingKafkaSink" />
       <module name="FlinkTest" />
@@ -337,6 +647,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.haoxin.bigdata.streaming.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingKafkaSourceScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.haoxin.bigdata.flink.streaming.kafka.StreamingKafkaSourceScala" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.haoxin.bigdata.flink.streaming.kafka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -385,19 +708,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.sql_join_test2" />
-      <item itemvalue="Application.SocketDemoWindowWatermarksideOutLateData2Java" />
       <item itemvalue="Application.StreamingKafkaSource" />
       <item itemvalue="Application.StreamingKafkaSink" />
       <item itemvalue="Application.StreamingWindowWatermarkScala" />
       <item itemvalue="Application.StreamingWindowWatermarklatedataScala" />
+      <item itemvalue="Application.StreamingKafkaSourceScala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamingKafkaSource" />
+        <item itemvalue="Application.StreamingKafkaSourceScala" />
         <item itemvalue="Application.StreamingWindowWatermarklatedataScala" />
         <item itemvalue="Application.StreamingWindowWatermarkScala" />
         <item itemvalue="Application.StreamingKafkaSink" />
-        <item itemvalue="Application.StreamingKafkaSource" />
-        <item itemvalue="Application.SocketDemoWindowWatermarksideOutLateData2Java" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565860848832</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="增加 window watermark scala">
+      <created>1565920959973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565920959973</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -482,9 +812,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.40922844" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.2602118" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5016077" side_tool="true" weight="0.34039333" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4324759" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.82447666" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5209003" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.329582" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3768116" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.04614221" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.49621785" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.25642964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -511,35 +869,6 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.49621785" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.27652463" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5016077" side_tool="true" weight="0.34039333" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4324759" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.74235106" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5209003" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
-      <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.329582" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32850242" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3784219" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.04614221" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.49621785" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -554,48 +883,14 @@
     <MESSAGE value="增加 checkpoint demo" />
     <MESSAGE value="增加 flink window and watermark" />
     <MESSAGE value="增加 flink kafka java" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加 flink kafka java" />
+    <MESSAGE value="增加 window watermark scala" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加 window watermark scala" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoCrossJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoUnionJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoJoinJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoFirstNJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/batch/batchApi/BatchDemoHashRangePartitionJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/sql/sql_top_test.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -858,30 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.10_2.11/1.7.2/flink-connector-kafka-0.10_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer010.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="54" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
@@ -893,9 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1525">
           <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,9 +1171,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#51#84#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedata2Scala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
@@ -916,10 +1188,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/window/StreamingWindowWatermarklatedata2Scala.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.7.2/flink-connector-kafka-0.11_2.11-1.7.2.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer011.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/kafka/FlinkFromkafakScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="48" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.10_2.11/1.7.2/flink-connector-kafka-0.10_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer010.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSinkScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="44" column="100" selection-start-line="44" selection-start-column="100" selection-end-line="44" selection-end-column="100" />
+          <folding>
+            <element signature="e#50#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/haoxin/bigdata/flink/streaming/kafka/StreamingKafkaSourceScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#50#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/haoxin/bigdata/streaming/kafka/StreamingKafkaSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
         </state>
       </provider>
     </entry>

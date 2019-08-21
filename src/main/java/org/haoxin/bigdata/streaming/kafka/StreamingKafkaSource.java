@@ -39,13 +39,13 @@ public class StreamingKafkaSource {
         String topic = "t1";
         Properties prop = new Properties();
         prop.setProperty("bootstrap.servers","192.168.71.10:9092,192.168.71.11:9092,192.168.71.12:9092");
-        prop.setProperty("group.id","con1");
+        prop.setProperty("group.id","scalas1");
         FlinkKafkaConsumer010<String> myConsumer = new FlinkKafkaConsumer010<>(topic, new SimpleStringSchema(), prop);
 
         myConsumer.setStartFromGroupOffsets();//默认策略
 
         //获取kafka数据源数据
-        DataStreamSource<String> text = env.addSource(myConsumer);
+        DataStreamSource<String> text = env.addSource(myConsumer).setParallelism(3);
 
         //控制台打印数据
         text.print().setParallelism(1);

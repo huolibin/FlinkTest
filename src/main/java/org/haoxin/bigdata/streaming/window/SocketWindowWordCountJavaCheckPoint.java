@@ -1,4 +1,4 @@
-package org.haoxin.bigdata.streaming;
+package org.haoxin.bigdata.streaming.window;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.utils.ParameterTool;
