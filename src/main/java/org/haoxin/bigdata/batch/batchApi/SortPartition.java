@@ -15,6 +15,7 @@ public class SortPartition {
     public static void main(String[] args) throws  Exception{
         //创建环境
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        env.getConfig().setExecutionRetryDelay(3000);//已过时
 
         //构建数据source
         ArrayList<Tuple2<Integer,String>> data = new ArrayList<>();
