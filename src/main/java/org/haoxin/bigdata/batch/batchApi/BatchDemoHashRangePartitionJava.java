@@ -1,6 +1,9 @@
 package org.haoxin.bigdata.batch.batchApi;
 
 import org.apache.flink.api.common.functions.MapPartitionFunction;
+import org.apache.flink.api.common.functions.Partitioner;
+import org.apache.flink.api.common.restartstrategy.RestartStrategies;
+import org.apache.flink.api.common.time.Time;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.CrossOperator;
 import org.apache.flink.api.java.operators.DataSource;
@@ -26,6 +29,8 @@ public class BatchDemoHashRangePartitionJava {
 
         //获取环境
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, Time.seconds(5)));//任务失败 重试
+
 
         ArrayList<Tuple2<Integer, String>> data = new ArrayList<>();
         data.add(new Tuple2<>(1,"hello1"));
@@ -52,8 +57,9 @@ public class BatchDemoHashRangePartitionJava {
 
         DataSource<Tuple2<Integer, String>> text = env.fromCollection(data);
         //对数据再次平衡，消除数据倾斜
-        //text.rebalance();
+        text.rebalance();
 
+        //partitionByRange 有助于消除数据倾斜
         text.partitionByRange(0).mapPartition(new MapPartitionFunction<Tuple2<Integer, String>, Tuple2<Integer, String>>() {
             @Override
             public void mapPartition(Iterable<Tuple2<Integer, String>> values, Collector<Tuple2<Integer, String>> out) throws Exception {
@@ -66,6 +72,9 @@ public class BatchDemoHashRangePartitionJava {
         }).print();
 
         System.out.println("=====================================================================");
+
+
+        //partitionByHash 不能友好的消除数据倾斜
         text.partitionByHash(0).mapPartition(new MapPartitionFunction<Tuple2<Integer, String>, Tuple2<Integer, String>>() {
             @Override
             public void mapPartition(Iterable<Tuple2<Integer, String>> values, Collector<Tuple2<Integer, String>> out) throws Exception {
@@ -76,5 +85,29 @@ public class BatchDemoHashRangePartitionJava {
                 }
             }
         }).print();
+
+        System.out.println("=====================================================================");
+
+        //自定义mypartition
+        text.partitionCustom(new MyPartition(),0)
+    .mapPartition(new MapPartitionFunction<Tuple2<Integer, String>, Tuple2<Integer, String>>() {
+            @Override
+            public void mapPartition(Iterable<Tuple2<Integer, String>> values, Collector<Tuple2<Integer, String>> out) throws Exception {
+                Iterator<Tuple2<Integer, String>> it = values.iterator();
+                while (it.hasNext()) {
+                    Tuple2<Integer, String> next = it.next();
+                    System.out.println("当前线程id:" + Thread.currentThread().getId() + "," + next);
+                }
+            }
+        }).print();
+
+    }
+    //自定义mypartition
+    public static class MyPartition implements Partitioner<Integer>{
+        @Override
+        public int partition(Integer key, int numPartitions) {
+            System.err.println("分区总数："+ numPartitions);
+            return key % 5;
+        }
     }
 }
