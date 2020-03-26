@@ -49,6 +49,8 @@ public class StreamingKafkaSink {
 
         FlinkKafkaProducer010<String> myProducer = new FlinkKafkaProducer010<>(brokerList, topic, new SimpleStringSchema());
 
+        //event-timestamp事件的发生时间
+        myProducer.setWriteTimestampToKafka(true);
         //写入kafka
         text.addSink(myProducer);
 
