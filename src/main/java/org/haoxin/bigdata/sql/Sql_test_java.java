@@ -38,8 +38,6 @@ public class Sql_test_java {
 
         //打印数据
         result.print();
-
-
     }
 
     public static class WC {
