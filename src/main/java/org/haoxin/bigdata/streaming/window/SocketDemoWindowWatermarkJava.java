@@ -73,7 +73,7 @@ public class SocketDemoWindowWatermarkJava {
 
             @Override
             public long extractTimestamp(Tuple2<String, Long> element, long previousElementTimestamp) {
-                Long timestamp = element.f1;
+                Long timestamp = element.f1;//确定event_time
                 currentMaxTimestamp = Math.max(timestamp, currentMaxTimestamp);
                 long id = Thread.currentThread().getId();
                 System.out.println("currentThreadId:"+id+",key:"+element.f0+",eventtime:["+element.f1+"|"+sdf.format(element.f1)+"],currentMaxTimestamp:["+currentMaxTimestamp+"|"+
